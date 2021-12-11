@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.py-infobox {
+  width: 96%;
+  height: 680px;
+  margin: 2%;
+
+  position: relative;
+}
+
+/*------------- order summary -----------*/
+
+.container1 {
+  width: 26%;
+  height: 100%;
+  padding-top: 2%;
+}
+
+.order {
+  width: 84%;
+  height: 98%;
+  background-color: #ccffff;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.order h2 {
+  color: #006666;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+
+.order .itembox {
+  width: 86%;
+  background-color: #fff;
+  margin: 0 auto 8%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.order .itembox img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 2%;
+
+  object-fit: cover;
+}
+
+.order .itembox .item-info {
+  padding: 3%;
+}
+
+.itembox .item-info h4 {
+  color: #006666;
+  padding-top: 2px;
+}
+
+.itembox .quantity {
+  color: #006666;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.itembox .price {
+  color: #fff;
+  background-color: #1685a9;
+  padding: 1% 2%;
+
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+}
+
+hr {
+  border-top: 1px solid #006666;
+  margin: 0 8%;
+}
+
+.ship,
+.total {
+  text-align: right;
+  margin: 5% 8%;
+}
+
+.ship {
+  font-size: 17px;
+}
+
+.total {
+  font-size: 23px;
+}
+
+/*----------- xxx -----------------*/
+
+.container2 {
+  width: 74%;
+  height: 100%;
+  background: #ccffff;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*----------------- customer information ---------------  */
+
+.cus-infobox {
+  background-color: #fff;
+  width: 380px;
+  height: 360px;
+
+  margin: 14% 1.5% 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+
+  position: absolute;
+  left: 0;
+}
+
+.cus-infobox h2 {
+  color: #006666;
+  font-size: 20px;
+  padding: 15px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.cus-infobox h4 {
+  color: #006666;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.cus-info {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 5px 5px;
+
+  display: flex;
+
+  position: relative;
+}
+
+.cus-info .input-box {
+  width: 100%;
+  margin-right: 12px;
+
+  position: relative;
+}
+
+.cus-info .input-box:last-child {
+  margin-right: 0;
+}
+
+.cus-info .input-box .name {
+  width: 100%;
+  color: #006666;
+  background-color: #fff;
+  letter-spacing: 1px;
+  padding: 14px 10px 14px 50px;
+  border: 1px solid #0003;
+  border-radius: 3px;
+  outline: none;
+}
+
+.cus-info .input-box .name:focus {
+  box-shadow: 0 0 2px 1px #006666;
+  border: 1px solid #006666;
+}
+
+.cus-info .input-box .name:focus + .icon {
+  color: #fff;
+  background-color: #006666;
+  border: 1px solid #006666;
+}
+
+.cus-info .input-box .icon {
+  width: 44px;
+  color: #333;
+  background-color: #f1f1f1;
+  border-radius: 2px 0 0 2px;
+  font-size: 20px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  pointer-events: none;
+  border-left: 1px solid #0003;
+}
+
+/*------------- payment details box --------*/
+
+.py-detailsbox {
+  background-color: #fff;
+  width: 53%;
+  height: 84%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+
+  position: absolute;
+  top: 12%;
+  right: 2.8%;
+}
+
+/*------------ payment form -------------------*/
+
+.container2 p {
+  display: inline-flex;
+  margin-right: 4%;
+  padding-top: 3%;
+  padding-left: 3%;
+}
+
+.container2 #p1 {
+  padding-left: 21%;
+}
+
+.container2 .mk,
+.container2 i {
+  color: #006666;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.container2 i {
+  margin-right: 4%;
+}
+
+.container2 .mk:last-of-type,
+.container2 i:nth-of-type(3) {
+  opacity: 0.6;
+}
+
+.py-info {
+  width: 98%;
+  padding: 3% 0 0 5%;
+  margin: auto;
+}
+
+.py-info .pymethod h2 {
+  color: #006666;
+  font-size: 23px;
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+
+.bitpay,
+.ripple,
+.amazon,
+.paypal,
+.mastercard,
+.visa {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  width: 50px;
+  height: 30px;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-bottom: 6%;
+
+  object-fit: cover;
+}
+
+.bitpay,
+.ripple,
+.amazon,
+.paypal,
+.mastercard,
+.visa {
+  opacity: 0.8;
+}
+
+.bitpay:hover,
+.ripple:hover,
+.amazon:hover,
+.paypal:hover,
+.mastercard:hover,
+.visa:hover {
+  opacity: 1;
+}
+
+.pydata-name {
+  color: #006666;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+.number,
+.cardhn,
+.expdate {
+  border: none;
+  padding: 2%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 1.8%;
+}
+
+.number:focus,
+.cardhn:focus,
+.expdate:focus {
+  outline: none;
+}
+
+.number {
+  width: 14%;
+  height: 38px;
+  margin-right: 8%;
+  margin-bottom: 6%;
+}
+
+.number:first-of-type {
+  margin-left: 4%;
+}
+
+.cardholdername,
+.expiration,
+.security {
+  margin-bottom: 4%;
+}
+
+.expiration .pydata-name {
+  padding-right: 28px;
+}
+
+.expiration .expdate {
+  margin-right: 4%;
+}
+
+.security .pydata-name {
+  padding-right: 23%;
+}
+
+.security .cardhn {
+  width: 17%;
+}
+
+#pn {
+  width: 88%;
+  color: white;
+  background-color: #1685a9;
+  border: none;
+  cursor: pointer;
+  padding: 3% 6%;
+  margin: 0 3.8% 3% 3.8%;
+}

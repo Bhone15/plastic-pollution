@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+      * {
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --navbg: #91cec7;
+        --menutext: #2e5551;
+        --menueff: #2e5551ab;
+        --bannerbg: #91cec7;
+        --bgcnt: #077fad;
+        --arw: #2e5551cf;
+        --introbg: #e9f9f9;
+        --intropara: #044d45;
+        --effecttxt: #053767;
+        --recyc: #ffea80;
+        --recychd: #213f3c;
+        --gry: #3f3e3e;
+        --fttext: #b7dbf0;
+        --cpybg: #043949;
+        --cpyicon: #15894e;
+        --green: #044d45;
+      }
+
+      body {
+        background-image: url('https://www.unep.org/interactive/beat-plastic-pollution/assets/imgs/pile.png');
+      }
+
+      header h1 {
+        margin-right: auto;
+        /* background-color: #015c92; */
+        color: #fff;
+        text-shadow: 5px 5px 5px black;
+        padding: 2px 10px;
+        /* border-radius: 50%; */
+        /* font-variant: small-caps; */
+      }
+
+      li,
+      a {
+        list-style: none;
+        font-size: 16px;
+        text-decoration: none;
+        transition: all 0.3s;
+        color: black;
+      }
+
+      header a:hover {
+        box-shadow: 5px 5px 5px black;
+        padding: 10px;
+      }
+
+      header button {
+        color: #fff;
+        background-color: #015c92;
+        padding: 10px 20px;
+        border-radius: 50px;
+      }
+
+      header button:hover {
+        background-color: #08546c;
+      }
+
+      header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* background-color: #08535d; */
+        background-color: var(--navbg);
+
+        padding: 20px 5%;
+      }
+
+      .navlink li {
+        display: inline-block;
+        padding: 0px 15px;
+      }
+
+      .head {
+        padding: 20px 0;
+        font-size: 25px;
+        text-align: center;
+        color: #1f2f98;
+      }
+
+      .firstcontainer {
+        width: 900px;
+        height: 2450px;
+        box-shadow: 6px 6px 9px black;
+        background-color: #fff;
+        margin-left: 150px;
+        float: left;
+      }
+
+      .firstcontainer button {
+        color: #fff;
+        background-color: #015c92;
+        padding: 10px 20px;
+        margin-top: 20px;
+      }
+      .firstcontainer button:hover {
+        background-color: #08546c;
+      }
+
+      .container1 {
+        width: 900px;
+        height: 650px;
+        background: linear-gradient(47deg, rgb(236, 227, 227) 40%, #fff 30%);
+        box-shadow: 6px 6px 9px black;
+      }
+      .container1 div {
+        text-align: center;
+      }
+
+      .container2 {
+        width: 900px;
+        height: 200px;
+        background-image: url('https://image.shutterstock.com/image-vector/say-no-plastic-low-poly-600w-1490928944.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+        margin-top: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container2 div {
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .container3 {
+        margin-top: 50px;
+        width: 900px;
+        height: 700px;
+        background: linear-gradient(-47deg, rgb(236, 227, 227) 40%, #fff 30%);
+      }
+      .container3 div {
+        text-align: center;
+      }
+
+      .container4 {
+        margin-top: 50px;
+        width: 900px;
+        height: 100px;
+        background-color: #013b63;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .container4 div {
+        text-align: center;
+        color: #888;
+      }
+
+      .container5 {
+        margin-top: 50px;
+        width: 900px;
+        height: 600px;
+        display: flex;
+        background: linear-gradient(45deg, rgb(201, 193, 193) 60%, #fff 20%);
+      }
+      .container5 div {
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .secondcontainer {
+        width: 300px;
+        height: 2450px;
+        /* background: linear-gradient(90deg, #fff 50%, #777 40%); */
+
+        margin-left: 50px;
+
+        float: left;
+      }
+      .box1 h1 {
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+
+      .secondcontainer .box1 {
+        width: 300px;
+        height: 550px;
+        margin-top: 50px;
+        box-shadow: 6px 6px 9px black;
+        background: linear-gradient(-60deg, #fff 40%, rgb(177, 173, 173) 20%);
+      }
+
+      .thirdcontainer {
+        margin-top: 2500px;
+        height: 100px;
+        /* background-color: #99bcc4; */
+        background: linear-gradient(
+          -60deg,
+          rgb(180, 24, 24) 40%,
+          rgb(177, 173, 173) 20%
+        );
+        clear: both;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .thirdcontainer i {
+        font-size: 80px;
+      }
+      .thirdcontainer h1 {
+        color: #fff;
+      }
+
+      .footer {
+        clear: both;
+        height: 350px;
+        color: black;
+        position: relative;
+        background-color: var(--navbg);
+      }
+      .footer .link,
+      .contact,
+      .box {
+        float: left;
+        margin-left: 200px;
+        margin-top: 50px;
+      }
+      .footer li a {
+        color: var(--intropara);
+        font-size: 14px;
+        margin-top: 15px;
+        display: block;
+      }
+
+      .credit {
+        width: 100%;
+        height: 50px;
+        /* background-color: #000e2b; */
+        background-color: var(--navbg);
+        clear: both;
+        text-align: center;
+        position: absolute;
+        top: 300px;
+        margin-top: 50px;
+      }
+
+      .btn {
+        padding: 5px 10px;
+        background-color: var(--intropara);
+        border: none;
+        outline: none;
+        margin-top: 5px;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+      }
+      .btn:hover {
+        /* box-shadow: 5px 5px 5px black; */
+        transform: scale(1.1);
+      }
+
+      .box h3 {
+        margin-bottom: 10px;
+      }
+
+      .box p {
+        margin-bottom: 10px;
+      }
+
+      .box input {
+        margin-bottom: 10px;
+        text-transform: capitalize;
+        padding: 10px 15px;
+      }
+
+      .share {
+        margin-top: 10px;
+      }
+      .share a {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+
+      .share a:hover {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><i class="fas fa-recycle"></i> 1JOrg</h1>
+
+      <nav>
+        <ul class="navlink">
+          <li><a href="../home/plasticpollution.html">Home</a></li>
+          <li><a href="../news/index.html">News</a></li>
+          <li><a href="../project/projects.html">Projects</a></li>
+          <li><a href="../donation-form/DanationPage.html">Donate</a></li>
+          <li><a href="../ecoshop/shop.html">Shop</a></li>
+          <li><a href="../blog/blog.html">Blog</a></li>
+          <li><a href="../about/plasticpollutionpj.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- <button>Contact</button> -->
+    </header>
+
+    <section>
+      <div class="head">
+        <h1>Our Blog</h1>
+      </div>
+
+      <div class="firstcontainer">
+        <div class="container1">
+          <img
+            src="https://images.unsplash.com/photo-1600418725276-a399595aac45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            style="width: 900px; height: 450px; object-fit: cover"
+            alt=""
+          />
+          <div>
+            <h1>About Plastic Pollution</h1>
+            <p>
+              plastic pollution, accumulation in the environment of synthetic
+              plastic products to the point where they create problems for
+              wildlife and their habitats as well as for human populations.In
+              1907 the invention of Bakelite brought about a revolution in
+              materials by introducing truly synthetic plastic resins into world
+              commerce. By the end of
+            </p>
+            <a href="https://www.britannica.com/science/plastic-pollution"
+              ><button>Read More</button></a
+            >
+          </div>
+        </div>
+
+        <div class="container2">
+          <div class="divc2">
+            <h1>Plastic Pollution</h1>
+          </div>
+        </div>
+
+        <div class="container3">
+          <img
+            src="https://images.unsplash.com/photo-1526951521990-620dc14c214b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            style="width: 900px; height: 450px"
+            alt=""
+          />
+          <div>
+            <h1 style="margin-bottom: 15px">
+              12 Facts About Plastic Pollution You Need To Know
+            </h1>
+            <p>
+              According to the UN Environment Programme (UNEP), 300 million
+              tonnes of plastic is produced every year, and not all of it is
+              recycled. To put that into perspective, that’s equivalent to the
+              weight of the entire human population.It is also up to us as
+              consumers to understand the impact that our plastic consumption is
+              having on the environment. Get clued up with these lesser-known
+              facts about plastic that you really need to know.
+            </p>
+            <a
+              href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi7mOjDtNn0AhWkk2YCHf82AVQYABAAGgJzbQ&ae=2&ohost=www.google.com&cid=CAESQeD2zTAs2JpeA7nT3lvpSmsRymJTGygj5FmQQY-qBwpLVouHl4gVFMV43UlG8-0fM8Aq-j5BI3Cvdp9-6aorDg-W&sig=AOD64_3FrT2zbXHvM_J1HDWgTArj10BLKA&q&adurl&ved=2ahUKEwibiODDtNn0AhWioekKHcGTD5gQ0Qx6BAgDEAE"
+              ><button>Read More</button></a
+            >
+          </div>
+        </div>
+
+        <div class="container4">
+          <img
+            src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            style="width: 200px; height: 100px"
+            alt=""
+          />
+          <div>
+            <h1>Say No to Plastic</h1>
+          </div>
+        </div>
+
+        <div class="container5">
+          <img
+            src="https://images.unsplash.com/photo-1511189330313-b0af599a6f5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            style="width: 450px; height: 600px"
+            alt=""
+          />
+          <div>
+            <h1 style="margin-bottom: 15px">
+              Top 10 countries doing the most to tackle plastic pollution
+            </h1>
+            <p>
+              Plastic takes between 500 and 1,000 years to completely degrade.
+              As a result, ALL of the plastic that has ever been manufactured or
+              used by us can still be found in some form on our planet. Think of
+              it this way: every toothbrush you have ever used is still out
+              there – somewhere.A shocking 40 per cent of plastic is used only
+              once before being discarded. And only nine per cent of plastic has
+              EVER been recycled. It’s no wonder then that we have now reached a
+              crisis point.
+            </p>
+            <a
+              href="https://good-with-money.com/2021/07/26/top-10-countries-doing-the-most-to-tackle-plastic-pollution/"
+              ><button>Read More</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="secondcontainer">
+        <div class="box1">
+          <img
+            src="https://images.unsplash.com/photo-1559608520-25d5b139f1c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=781&q=80"
+            style="width: 300px; height: 300px"
+            alt=""
+          />
+          <h1>Save The Ocean</h1>
+        </div>
+
+        <div class="box1">
+          <img
+            src="https://images.unsplash.com/photo-1552364523-2c42c6919bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            style="width: 300px; height: 300px"
+            alt=""
+          />
+          <h1>Save The Animals</h1>
+        </div>
+
+        <div class="box1">
+          <img
+            src="https://images.unsplash.com/photo-1579028017684-1c828c18b5f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            style="width: 300px; height: 300px"
+            alt=""
+          />
+          <h1>Save The <br />Earth</h1>
+        </div>
+
+        <div class="box1">
+          <img
+            src="https://images.unsplash.com/photo-1562577308-7a567b20e123?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            style="width: 300px; height: 300px"
+            alt=""
+          />
+          <h1>Stop Making Plastic Pollution</h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="thirdcontainer">
+      <h1>Stop Plastic Pollution</h1>
+      <i class="fas fa-spa"></i>
+      <i class="fab fa-aws"></i>
+      <i class="fab fa-angrycreative"></i>
+      <i class="fab fa-adversal"></i>
+      <i class="fab fa-apper"></i>
+    </div>
+
+    <div class="footer">
+      <div class="link">
+        <h4>Links</h4>
+
+        <nav class="footerlink">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contact">
+        <h4>Contact Us</h4>
+        <nav>
+          <ul>
+            <li><a href="#">+9512345678</a></li>
+            <li><a href="#">++111-222-3333</a></li>
+            <li><a href="#">+1jorgnization@gmail.com</a></li>
+          </ul>
+        </nav>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Newsletter</h3>
+        <p>subscribe for latest updates</p>
+        <form action="">
+          <input
+            type="email"
+            name=""
+            placeholder="enter your email"
+            id=""
+            class="email"
+          /><br />
+          <input type="submit" value="subscribe" class="btn" />
+        </form>
+      </div>
+
+      <div class="credit"><small>@Copyright | all rights reserved!</small></div>
+    </div>
+  </body>
+</html>

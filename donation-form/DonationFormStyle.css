@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;400&family=Poppins:wght@100;200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+:root {
+  --navbg: #91cec7b8;
+  --menutext: #2e5551;
+  --bannerbg: #91cec7;
+  --bgcnt: #077fad;
+  --arw: #2e5551cf;
+  --introbg: #e9f9f9;
+  --intropara: #044d45;
+  --effecttxt: #053767;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--introbg);
+  font-family: 'M PLUS Code Latin', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/* Global Styling */
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* icons  */
+.firstIcon {
+  font-size: 100px;
+  color: var(--bgcnt);
+  padding-bottom: 50px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+/* Form */
+.form {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid rgb(51, 50, 50);
+  border-radius: 0.35rem;
+  padding: 1.5rem;
+}
+
+.form-step {
+  display: none;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+.form-step-active {
+  display: block;
+}
+
+.input-group {
+  margin: 2rem 0;
+}
+
+.radio-btn {
+  display: flex;
+}
+
+.dradio {
+  width: 50px;
+  margin-left: 50px;
+}
+
+.radio-btn label {
+  font-size: 25px;
+}
+
+.comment {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.payment {
+  width: 100%;
+  padding: 15px;
+  color: rgb(26, 23, 23);
+  background-color: var(--bgcnt);
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0;
+}
+
+.payment:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--bgcnt);
+}
+
+.visa {
+  padding-right: 20px;
+}
+
+.cardFname {
+  width: 262px;
+}
+
+.cardLname {
+  width: 262px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardNumber {
+  width: 410px;
+}
+
+.cardCvv {
+  width: 120px;
+}
+
+.cardNumber::placeholder {
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+
+.expire {
+  width: 48%;
+}
+
+.paypal {
+  width: 100%;
+  height: 140px;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+.paypal-text {
+  font-size: 20px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.paypal-btn {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0.6rem;
+  display: block;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  background-color: var(--bgcnt);
+  color: black;
+  text-align: center;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.paypal-btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--bgcnt);
+}
+
+.paypal-icon {
+  color: black;
+}
+
+.header {
+  text-shadow: 1px 1px 2px var(--bgcnt);
+  font-family: 'Architects Daughter', cursive;
+  font-size: 50px;
+  /* color: #5fe831; */
+  margin-top: 0;
+}
+
+.visaParent {
+  display: none;
+}
+
+.paypalParent {
+  display: none;
+}
+
+.payment-active {
+  display: block;
+}
+
+/* Button  */
+.btns-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.btn {
+  padding: 0.75rem;
+  display: block;
+  text-decoration: none;
+  background-color: var(--bgcnt);
+  color: black;
+  text-align: center;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--bgcnt);
+}
+
+/* modal  */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 600px;
+  max-width: 80%;
+  transition: 0.5s ease-in-out;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Architects Daughter', cursive;
+  position: relative;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+}
+
+#icon {
+  font-size: 130px;
+}
+
+.icon-container {
+  margin-top: 50px;
+  display: flex;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.home {
+  margin: 20px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+/* progress bar  */
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  width: 600px;
+}
+
+.progress-container::before {
+  content: '';
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--bgcnt);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #e0e0e0;
+  transition: 0.4s ease;
+}
+
+.circle.circle-active {
+  border-color: var(--bgcnt);
+}
+
+#icon {
+  color: var(--bgcnt);
+}

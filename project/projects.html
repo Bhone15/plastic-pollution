@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plastic Pollution Projects</title>
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- custom javascript link  -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="#" class="logo"> <i class="fas fa-recycle"></i> 1JOrg </a>
+
+      <nav class="navbar">
+        <a href="../home/plasticpollution.html">Home</a>
+        <a href="../news/index.html">News</a>
+        <a href="#">Projects</a>
+        <a href="../donation-form/DanationPage.html">Donate</a>
+        <a href="../ecoshop/shop.html">Shop</a>
+        <a href="../blog/blog.html">Blog</a>
+        <a href="../about/plasticpollutionpj.html">About</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+      </div>
+
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div
+        class="slide active"
+        style="
+          background: url(images/home2.jpg) no-repeat;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="content">
+          <span>Save our planet</span>
+          <h3>Reduce Plastic waste</h3>
+          <a href="#volunteer" class="btn">Join Our Community</a>
+        </div>
+      </div>
+
+      <div
+        class="slide"
+        style="
+          background: url(images/home1.jpg) no-repeat;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="content">
+          <span>Save</span>
+          <h3>the earth from plastic</h3>
+          <a href="#volunteer" class="btn">Join Our Community</a>
+        </div>
+      </div>
+
+      <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+      <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- project section starts  -->
+
+    <section class="projects" id="projects">
+      <h1 class="heading">"Our projects"</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/project1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Education Programs... </a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Adipisci, laborum!
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/project2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Plastic Ocean Clean up... </a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Adipisci, laborum!
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/project3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Plastic Recycling project... </a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Adipisci, laborum!
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- project section ends -->
+
+    <!-- volunteer section starts  -->
+
+    <section class="volunteer" id="volunteer">
+      <h1 class="heading"><span>"Volunteer</span> Form"</h1>
+
+      <form action="" data-aos="zoom">
+        <div class="inputBox">
+          <input type="text" placeholder="First Name" data-aos="fade-up" />
+          <input type="text" placeholder="Last Name" data-aos="fade-up" />
+        </div>
+
+        <div class="inputBox">
+          <input type="number" placeholder="Ph number" data-aos="fade-up" />
+          <input type="email" placeholder="Email" data-aos="fade-up" />
+        </div>
+
+        <textarea
+          name=""
+          placeholder="your message"
+          id=""
+          cols="30"
+          rows="10"
+          data-aos="fade-up"
+        ></textarea>
+
+        <input type="submit" value="Join our community" class="btn" />
+      </form>
+    </section>
+
+    <!-- volunteer section ends -->
+
+    <!-- other section starts  -->
+
+    <section class="other" id="other">
+      <h1 class="heading">"Other..."</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="images/film1.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>A Plastic Ocean</h3>
+            <div class="details">HK/UK/US <span>• 2016</span></div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/film2.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Cutting the Line</h3>
+            <div class="details">South Africa <span>• 2022</span></div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/film3.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Earth’s Ekko</h3>
+            <div class="details">USA<span>.2020</span></div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/film4.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>STOP</h3>
+            <div class="details">Czech Republic <span>• 2019</span></div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/film5.jpg" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Sydney Harbour: Above & Below</h3>
+            <div class="details">USA <span>.2019</span></div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="images/film6.png" alt="" />
+            <div class="icons">
+              <a href="#" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Out of Plastic</h3>
+            <div class="details">Spain <span>.2018</span></div>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- other section ends -->
+
+    <!--Projects Gallery section starts-->
+    <section id="gallery">
+      <input type="radio" name="Photos" id="check1" checked />
+      <input type="radio" name="Photos" id="check2" />
+      <input type="radio" name="Photos" id="check3" />
+      <input type="radio" name="Photos" id="check4" />
+      <div class="container">
+        <h1>"Our Project Gallery"</h1>
+        <div class="top-content">
+          <h3>Project Gallery</h3>
+          <label for="check1">All Photos</label>
+          <label for="check2">Education</label>
+          <label for="check3"> Ocean Clean up</label>
+          <label for="check4">Recycling project</label>
+        </div>
+
+        <div class="photo-gallery">
+          <div class="pic recycle">
+            <img src="images/recycle1.jpg" alt="" />
+          </div>
+          <div class="pic education">
+            <img src="images/education1.jfif" alt="" />
+          </div>
+          <div class="pic clean">
+            <img src="images/clean1.jfif" alt="" />
+          </div>
+          <div class="pic recycle">
+            <img src="images/recycle2.jpg" alt="" />
+          </div>
+          <div class="pic education">
+            <img src="images/education2.jfif" alt="" />
+          </div>
+          <div class="pic clean">
+            <img src="images/clean2.jfif" alt="" />
+          </div>
+          <div class="pic recycle">
+            <img src="images/recycle5.jpg" alt="" />
+          </div>
+          <div class="pic education">
+            <img src="images/education3.jfif" alt="" />
+          </div>
+          <div class="pic clean">
+            <img src="images/clean3.jfif" alt="" />
+          </div>
+          <div class="pic recycle">
+            <img
+              src="images/recycle6.jpg"
+              alt=""
+              style="width: 200px; height: 200px"
+            />
+          </div>
+          <div class="pic recycle">
+            <img
+              src="images/recycle4.jpg"
+              alt=""
+              style="width: 200px; height: 200px"
+            />
+          </div>
+          <div class="pic recycle">
+            <img
+              src="images/recycle3.jpg"
+              alt=""
+              style="width: 200px; height: 200px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Project gallery section ends-->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="link" href="#home">
+            <i class="fas fa-angle-right"></i> home</a
+          >
+          <a class="link" href="#donation">
+            <i class="fas fa-angle-right"></i> Donation Form</a
+          >
+          <a class="link" href="#projects">
+            <i class="fas fa-angle-right"></i> Projects</a
+          >
+          <a class="link" href="#shop">
+            <i class="fas fa-angle-right"></i> Shop</a
+          >
+          <a class="link" href="#news">
+            <i class="fas fa-angle-right"></i> News</a
+          >
+          <a class="link" href="#blogs">
+            <i class="fas fa-angle-right"></i> Blogs</a
+          >
+          <a class="link" href="#about">
+            <i class="fas fa-angle-right"></i> About Us</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a class="link" href="#projects">
+            <i class="fas fa-angle-right"></i> our projects
+          </a>
+          <a class="link" href="#volunteer">
+            <i class="fas fa-angle-right"></i> volunteer form
+          </a>
+          <a class="link" href="#other">
+            <i class="fas fa-angle-right"></i> other
+          </a>
+          <a class="link" href="#gallery">
+            <i class="fas fa-angle-right"></i> gallery
+          </a>
+          <a class="link" href="#">
+            <i class="fas fa-angle-right"></i> terms of use
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a class="link" href="#">
+            <i class="fas fa-phone"></i> +9512345678
+          </a>
+          <a class="link" href="#">
+            <i class="fas fa-phone"></i> +111-222-3333
+          </a>
+          <a class="link" href="#">
+            <i class="fas fa-envelope"></i> 1jorgnization@gmail.com
+          </a>
+
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <form action="">
+            <input
+              type="email"
+              name=""
+              placeholder="enter your email"
+              id=""
+              class="email"
+            />
+            <input type="submit" value="subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+
+      <div class="credit"><span>@Copyright</span> | all rights reserved!</div>
+    </section>
+
+    <!-- footer section ends -->
+  </body>
+</html>
