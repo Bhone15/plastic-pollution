@@ -1,0 +1,35 @@
+:root {
+  --navbg: #91cec7;
+  --menutext: #2e5551;
+  --menueff: #2e5551ab;
+  --bannerbg: #91cec7;
+  --bgcnt: #077fad;
+  --arw: #2e5551cf;
+  --introbg: #e9f9f9;
+  --intropara: #044d45;
+  --effecttxt: #053767;
+  --recyc: #ffea80;
+  --recychd: #213f3c;
+  --gry: #3f3e3e;
+  --fttext: #b7dbf0;
+  --cpybg: #043949;
+  --cpyicon: #15894e;
+  --green: #044d45;
+}
+
+*::selection {
+  background: var(--green);
+  color: #fff;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem !important;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--navbg) !important;
+}
