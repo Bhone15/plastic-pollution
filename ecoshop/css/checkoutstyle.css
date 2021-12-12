@@ -230,14 +230,15 @@ hr {
 }
 
 .container2 #p1 {
-  padding-left: 21%;
+  padding-left: 9%;
 }
 
 .container2 .mk,
 .container2 i {
   color: #006666;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 800;
+  letter-spacing:3.8px;
 }
 
 .container2 i {
@@ -359,5 +360,5 @@ hr {
   border: none;
   cursor: pointer;
   padding: 3% 6%;
-  margin: 0 3.8% 3% 3.8%;
+  margin: 3% 3.8% 0 3.8%;
 }
