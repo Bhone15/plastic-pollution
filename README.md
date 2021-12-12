@@ -1,5 +1,5 @@
 # plastic-pollution
-The Whole Group Fontend Project
+The Whole Group Frontend Project
 ### Project Member 
 1. Bhone Pyae Aung 
 2. Thet Paing Hmue
